@@ -67,7 +67,7 @@ img {
 }
 
 .navbar ul {
-  display: flex;
+  //display: flex;
   list-style: none;
 }
 
