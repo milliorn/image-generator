@@ -59,7 +59,7 @@ img {
 }
 
 .navbar a:hover {
-  color: var(--primary-color);
+  //color: var(--primary-color);
 }
 
 .navbar ul li {
