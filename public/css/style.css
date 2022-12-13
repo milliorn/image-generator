@@ -1,5 +1,5 @@
 body {
-  //background: #f4f4f4;
+  /background: hsl(0, 0%, 14%);
   //color: #333;
   //font-size: 16px;
   line-height: 2;
@@ -22,8 +22,8 @@ form button:hover {
 
 /* Image */
 img {
-  //display: block;
-  //margin: auto;
+  display: block;
+  margin: auto;
 }
 
 .image {
@@ -32,9 +32,9 @@ img {
 }
 
 .msg {
-  font-size: 1.6rem;
-  margin-top: 1rem;
-  text-align: center;
+  //font-size: 1.6rem;
+  //margin-top: 1rem;
+  //text-align: center;
 }
 
 /* Navbar */
@@ -54,7 +54,7 @@ img {
 
 .navbar ul {
   //display: flex;
-  list-style: none;
+  //list-style: none;
 }
 
 .navbar {
