@@ -47,17 +47,22 @@
       >
         <form
           id="image-form"
-          class="is-align-items-center is-flex is-flex-direction-column is-fullheight is-fullwidth is-justify-content-center"
+          class="is-align-items-center is-flex is-flex-direction-column is-fullheight is-fullwidth is-justify-content-center field"
         >
-          <h1 class="has-text-dark is-size-3 py-4 px-0 has-text-centered">
+          <label class="has-text-dark is-size-3 py-4 px-0 has-text-centered">
             Type in Descriptive Text to Generate Image
-          </h1>
-          <div class="form-control">
-            <input type="text" id="prompt" placeholder="Enter Text" />
+          </label>
+          <div class="form-control control">
+            <input
+              type="text"
+              id="prompt"
+              placeholder="Enter Text"
+              class="input is-rounded is-medium mb-4"
+            />
           </div>
           <!-- size -->
-          <div class="form-control">
-            <select name="size" id="size">
+          <div class="form-control control">
+            <select name="size" id="size" class="select mb-4 is-medium">
               <option value="small">Small</option>
               <option value="medium" selected>Medium</option>
               <option value="large">Large</option>

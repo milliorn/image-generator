@@ -83,13 +83,13 @@ img {
 /* Showcase */
 .showcase form input,
 form select {
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 20px;
-  margin-bottom: 1rem;
-  max-width: 500px;
-  padding: 1rem;
-  width: 500px;
+  //border-radius: 0.25rem;
+  //border: 1px solid #ccc;
+  //font-size: 10px;
+  //margin-bottom: 1rem;
+  //padding: 1rem;
+  //width: 500px;
+  min-width: 70vw;
 }
 
 .showcase form {
