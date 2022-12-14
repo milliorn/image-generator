@@ -9,7 +9,14 @@ function onSubmit(e) {
   const size = document.querySelector("#size").value;
 
   if (prompt === "") {
-    alert("Please add some text");
+    Swal.fire({
+      confirmButtonText: "Close",
+      icon: "error",
+      text: "Missing text!",
+      title: "Error!",
+      toast: true,
+      position: 'center'
+    });
     return;
   }
 
@@ -34,7 +41,7 @@ async function generateImageRequest(prompt, size) {
 
     if (!response.ok) {
       removeSpinner();
-      throw new Error("Cannot generate image.");
+      throw new Error(`Cannot generate ${prompt} image because it violates OpenAI policy`);
     }
 
     const data = await response.json();
