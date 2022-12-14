@@ -6,6 +6,7 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
+// generate image based on the prompt text and size given.
 const generateImage = async (req, res) => {
   const { prompt, size } = req.body;
 
