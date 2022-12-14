@@ -19,3 +19,7 @@
 ## Bulma
 
 <https://bulma.io/documentation/>
+
+## sweetalert2
+
+<https://sweetalert2.github.io/>

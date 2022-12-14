@@ -1,3 +1,4 @@
+// when clicked run logic to see if we have text, else give alert to add text so we can generate images
 function onSubmit(e) {
   e.preventDefault();
 
@@ -8,13 +9,21 @@ function onSubmit(e) {
   const size = document.querySelector("#size").value;
 
   if (prompt === "") {
-    alert("Please add some text");
+    Swal.fire({
+      confirmButtonText: "Close",
+      icon: "error",
+      text: "Missing text!",
+      title: "Error!",
+      toast: true,
+      position: 'center'
+    });
     return;
   }
 
   generateImageRequest(prompt, size);
 }
 
+// generate request by POST to page and then pull from it and add it to main page
 async function generateImageRequest(prompt, size) {
   try {
     showSpinner();
@@ -32,7 +41,7 @@ async function generateImageRequest(prompt, size) {
 
     if (!response.ok) {
       removeSpinner();
-      throw new Error("Cannot generate image.");
+      throw new Error(`Cannot generate ${prompt} image because it violates OpenAI policy`);
     }
 
     const data = await response.json();
@@ -46,10 +55,12 @@ async function generateImageRequest(prompt, size) {
   }
 }
 
+// find spinner class and add it to page
 function showSpinner() {
   document.querySelector(".spinner").classList.add("show");
 }
 
+// find spinner class and remove it from page
 function removeSpinner() {
   document.querySelector(".spinner").classList.remove("show");
 }
