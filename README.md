@@ -1,7 +1,6 @@
 # Image Generator
 
-[![DeepSource](https://deepsource.io/gh/milliorn/image-generator.svg/?label=active+issues&show_trend=true&token=AqQyVjox9lZJb5Wb6uNZMlIS)](https://deepsource.io/gh/milliorn/image-generator/?ref=repository-badge)
-[![DeepSource](https://deepsource.io/gh/milliorn/image-generator.svg/?label=resolved+issues&show_trend=true&token=AqQyVjox9lZJb5Wb6uNZMlIS)](https://deepsource.io/gh/milliorn/image-generator/?ref=repository-badge)
+[![CodeQL](https://github.com/milliorn/image-generator/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/milliorn/image-generator/actions/workflows/github-code-scanning/codeql)
 
 The Image Generator is a Node.js application that generates images using the OpenAI API. It allows you to create custom images by leveraging the power of OpenAI's image generation capabilities.
 
