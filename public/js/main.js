@@ -47,16 +47,17 @@ async function generateImageRequest(prompt, size) {
       }),
     });
 
-    // inform the user that the request made has generated an error
-    if (!response.ok) {
-      removeSpinner();
-      throw new Error(
-        `Cannot generate ${prompt} image because it violates OpenAI policy`
-      );
-    }
-
     const responseJson = await response.json();
     const imageUrl = responseJson.data;
+
+    // if the response is not ok, throw an error
+    if (!response.ok) {
+      // console.log(responseJson);
+      removeSpinner();
+      throw new Error(
+        `${responseJson.error} Cannot generate "${prompt}" image because it violates OpenAI policy.`
+      );
+    }
 
     // this sets the element source to the imageUrl
     document.querySelector("#image").src = imageUrl;
