@@ -4,6 +4,10 @@
 
 The Image Generator is a Node.js application that generates images using the OpenAI API. It allows you to create custom images by leveraging the power of OpenAI's image generation capabilities.
 
+## Preview
+
+![Lighthouse Score and Preview](./public/assets/lighthouse.png)
+
 ## Usage
 
 1. Clone the repository: `git clone https://github.com/milliorn/image-generator.git`
@@ -14,8 +18,9 @@ The Image Generator is a Node.js application that generates images using the Ope
    - express
    - openai
    - sweetalert2
-   
+
    You can install the dependencies by running the following command: `npm install`
+
 3. Set up your environment variables. Create a `.env` file in the root directory and add your OpenAI API key. For example: `OPENAI_API_KEY=your-api-key`
 4. Start the application: `npm start`
 5. Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to access the Image Generator.
