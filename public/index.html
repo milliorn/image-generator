@@ -41,6 +41,16 @@
       form select {
         min-width: 70vw;
       }
+
+      #size {
+        width: 50%;
+        max-width: 200px;
+        text-align: center;
+      }
+
+      #size option {
+        text-align: center;
+      }
     </style>
 
     <script src="js/main.js" defer></script>
@@ -83,7 +93,10 @@
           id="image-form"
           class="is-align-items-center is-flex is-flex-direction-column is-fullheight is-fullwidth is-justify-content-center field"
         >
-          <label for="prompt" class="has-text-light is-size-3 py-4 px-0 has-text-centered">
+          <label
+            for="prompt"
+            class="has-text-light is-size-3 py-4 px-0 has-text-centered"
+          >
             Generate random images created by OpenAI by typing in descriptive
             text in the text box below
           </label>
@@ -95,6 +108,12 @@
               class="input is-large mb-4"
             />
           </div>
+          <label
+            for="size"
+            class="has-text-light is-size-3 py-4 px-0 has-text-centered"
+          >
+            Choose image size
+          </label>
           <div class="form-control control">
             <select name="size" id="size" class="select mb-4 is-large">
               <option value="small" selected>Small</option>
@@ -102,6 +121,7 @@
               <option value="large">Large</option>
             </select>
           </div>
+
           <button
             type="submit"
             class="button is-dark is-rounded is-large my-4 px-6 is-clickable"
